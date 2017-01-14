@@ -1,4 +1,4 @@
-ass Count < Formula
+class Stats < Formula
   desc "outputs statistical information about line delimited numbers from stdin"
   homepage "https://github.com/djhworld/stats"
   url "https://github.com/djhworld/stats/archive/0.0.1.tar.gz"
