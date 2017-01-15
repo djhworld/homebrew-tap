@@ -12,9 +12,7 @@ class Count < Formula
     ENV["GOPATH"] = buildpath/"vendor"
     ENV["GOHOME"] = buildpath
 
-    system "go", "get", "github.com/constabulary/gb/..."
-    system "make"
-#    system "go", "build", "-o", bin/"count", "src/github.com/djhworld/count/count.go", "src/github.com/djhworld/count/counter.go"
+    system "go", "build", "-o", bin/"count", "src/github.com/djhworld/count/count.go", "src/github.com/djhworld/count/counter.go"
   end
 
   test do
