@@ -8,10 +8,6 @@ class Stats < Formula
   depends_on "go" => :build
 
   def install
-    #ENV["GOBIN"] = bin
-    #ENV["GOPATH"] = buildpath/"vendor"
-    #ENV["GOHOME"] = buildpath
-
     system "make", "setup"
     system "make"
     bin.install('bin/stats')
