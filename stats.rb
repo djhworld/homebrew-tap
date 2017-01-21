@@ -14,6 +14,7 @@ class Stats < Formula
 
     system "make", "setup"
     system "make"
+    bin.install('bin/stats')
   end
 
   test do
